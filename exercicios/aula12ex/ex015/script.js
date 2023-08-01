@@ -33,17 +33,23 @@ function verificar() {
             genero = 'Mulher'
             if (idade >= 0 && idade < 8){
                 //bebe
+                img.setAttribute('src', 'bebem.png')
             } else if (idade < 18) {
                 //criança
+                img.setAttribute('src', 'criancam.png')
             } else if (idade < 21) {
                 //jovem
+                img.setAttribute('src', 'jovemm.png')
             } else if (idade < 50) {
                 //adulto
+                img.setAttribute('src', 'mulher.png')
             } else {
                 //senhor
+                img.setAttribute('src', 'senhora.png')
             }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Detectamos ${genero} com ${idade} anos.`
+        res.appendChild(img)
     }
 }
