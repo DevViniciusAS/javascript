@@ -14,12 +14,12 @@
 
     <script>
         function pais() {
-            var txtpais = window.document.getElementById('txtp')
+            var p = window.document.getElementById('txtp')
             var res = window.document.getElementById('res')
-            var nasc = txtpais.toUpperCase()
+            var nasc = p.value.toUpperCase()
             res.innerHTML = `Você mora em: ${nasc} `
-            if (nasc == 'Brasil') {
-                res.innerHTML += `Você é <strong>Brasileiro</strong>>` 
+            if (nasc == 'BRASIL') {
+                res.innerHTML += `Você é <strong>Brasileiro</strong>` 
             } else {
                 res.innerHTML += 'Você é <strong>Estrangeiro</strong>'
             }
